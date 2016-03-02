@@ -1,0 +1,748 @@
+/*公用*/
+.comWidth {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*headBar*/
+.topBar {
+    height: 31px;
+    line-height: 31px;
+    background-color: #F7F7F7;
+}
+
+.topBar .rightArea {
+    padding-right: 20px;
+}
+
+.collection {
+    background: url("../images/icon/collection.jpg") left center no-repeat;
+    padding-left: 19px;
+    font-weight: bold;
+}
+
+.topBar a:hover {
+    color: red;
+}
+
+/*logo*/
+.logoBar {
+    height: 95px;
+    background-color: #1D7AD9;
+}
+
+.logo {
+    padding-left: 41px;
+    padding-top: 13px;
+}
+
+/*搜索框*/
+.search_box {
+    width: 430px;
+    height: 35px;
+    margin-top: 23px;
+    margin-left: 185px;
+    background: #fff;
+    position: relative;
+
+}
+
+.search_text {
+    width: 350px;
+    height: 35px;
+    line-height: 35px \9; /* css hack \9所有IE浏览器才能识别*/
+    padding: 0 5px;
+    background-color: #fff;
+}
+
+.search_btn {
+    width: 35px;
+    height: 35px;
+    font-family: "Microsoft YaHei UI", "微软雅黑";
+    cursor: pointer;
+    background: url("../images/icon/search-button.png") left center no-repeat;
+
+}
+.suggest{
+    position: absolute;
+    width:430px;
+    background-color: #fff;
+    z-index: 20;
+    display: none;
+    border-top:1px solid #999;
+}
+.suggest ul{
+    padding: 10px;
+}
+.suggest ul li{
+   margin-bottom: 10px;
+    cursor: pointer;
+    color: #666666;
+}
+
+/*购物车*/
+.shopCar {
+    width: 145px;
+    height: 35px;
+    background-color: #FF8C00;
+    margin-top: 23px;
+    font: 14px/35px "Microsoft YaHei UI", "微软雅黑";
+    color: #fff;
+    margin-right: 59px;
+    display: inline;
+}
+
+.shopText {
+    width: 87px;
+    height: 35px;
+    border-right: 1px solid #E27A00;
+    background: url("../images/icon/shopCar.jpg") 10px center no-repeat;
+    text-indent: 40px;
+}
+
+.shopNum {
+    width: 27px;
+    height: 35px;
+    border-left: 1px solid #FF9C01;
+    background: url("../images/icon/sj.jpg") 34px center no-repeat;
+    text-align: right;
+    padding-right: 29px;
+}
+
+/*导航栏*/
+.navBox {
+    height: 35px;
+    background-color: #1369C0;
+    font-family: "Microsoft YaHei UI", "微软雅黑";
+}
+
+.shopClass {
+    width: 190px;
+    color: #fff;
+    position: relative;
+}
+
+.shopClass i {
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background: url("../images/icon/smSj.jpg") left center no-repeat;
+    overflow: hidden;
+    margin-left: 11px;
+}
+
+.shopClass h3 {
+    text-align: center;
+    line-height: 35px;
+}
+
+.nav {
+    height: 35px;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav a {
+    display: inline-block;
+    height: 35px;
+    padding: 0 35px;
+    color: #fff;
+    font: 14px/35px "Microsoft YaHei UI", "微软雅黑";
+}
+
+.nav .active {
+    background-color: #4593FD;
+}
+
+/*商品弹出列表*/
+.shopClass_show {
+    background-color: #4593FD;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    padding-bottom: 1px;
+}
+
+.shopClass_item {
+    padding: 13px 10px;
+    border-bottom: 1px solid #3487F2;
+    border-top: 1px solid #4593FD;
+    line-height: 16px;
+}
+.shopClass_item:hover .shopClass_rigArea{
+    display: block;
+}
+.shopClass_item:hover{
+    background-color: #fff;
+}
+.shopClass_item:hover a{
+    color: #000;
+}
+.shopClass_item a:hover{
+    color: #cd0200;
+}
+
+.shopClass_item .b {
+    font: 14px/1 "Microsoft YaHei UI", "微软雅黑";
+}
+
+.shopClass_item dd a{
+    color:#C2D9F8;
+}
+
+.shopClass_item_bgImg {
+    line-height: 1;
+    overflow: hidden;
+    height: 21px;
+    background: url("../images/icon/rSj.jpg") right center no-repeat;
+}
+.shopClass_item:hover .shopClass_item_bgImg{
+    background-image: none;
+}
+.shopClass_item_bgImg a{
+    color: #C2D9F8;
+}
+
+
+.shopClass_item .aLink {
+    width: 48px;
+    height: 20px;
+    background: url("../images/icon/aLink.png") left center no-repeat;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: underline
+}
+.shopClass_rigArea{
+    display: none;
+    background-color: #fff;
+    width: 540px;
+    font-family: "宋体";
+    position: absolute;
+    left:190px;
+    top:0;
+    z-index: 20;
+}
+.shopClass_rigArea_list li a:hover{
+    color: #cd0200;
+}
+.shopClass_rigArea .shopClass_rigArea_list a{
+    color: #333;
+}
+.shopClass_rigArea dl{
+    border-bottom: 1px solid #E5E5E5;
+    margin:0 15px;
+    padding: 10px 0;
+}
+.shopClass_rigArea_Tit{
+    line-height: 25px;
+    width: 68px;
+    float: left;
+    text-align: left;
+}
+.shopClass_rigArea_Tit a{
+   color: #4B88DA; ;
+}
+.shopClass_rigArea_list{
+    float: left;
+    line-height: 25px;
+    width: 440px;
+}
+.shopClass_rigArea_list ul li{
+    float: left;
+    margin-right: 15px;
+}
+.shopClass_rigArea .shopClass_rigArea_list .active{
+    color: #FF7300;
+}
+
+
+/*banner*/
+.banner{
+    margin-bottom: 15px;
+}
+.banner_bar {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox {
+    left: 0;
+    top: 0;
+}
+.imgBox a{
+    position: absolute;
+}
+
+.imgNum {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.imgNum a {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background-color: #fff;
+    margin: 0 3px;
+}
+.banner_big{
+    width: 810px;
+    height: 326px;
+}
+.banner_big .imgBox{
+    width: 810px;
+    height: 326px;
+}
+.banner_big img{
+    width: 810px;
+    height: 326px;
+}
+
+.imgNum .active {
+    background-color: aqua;
+}
+
+/*商品标题*/
+.shopTit {
+    height: 44px;
+    line-height: 44px;
+    font-family: "Microsoft YaHei UI", "微软雅黑";
+    margin-bottom: 15px;
+}
+.shopTit h3{
+    font-size:24px;
+    font-weight: normal;
+    padding-left: 15px;
+}
+.icon{
+    width: 44px;
+    height: 44px;
+    background: url("../images/icon/shopTit.gif") left center no-repeat;
+}
+.shopTit_aLink{
+    width: 250px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin-left: 55px;
+}
+.shopTit_aLink span{
+    background-color: #2785E6;
+    display: inline-block;
+    width: 110px;
+    height: 26px;
+    margin-right:13px ;
+}
+.shopTit_aLink a{
+    font-family: "宋体";
+    display: inline-block;
+    width: 95px;
+    background: url("../images/icon/rSj.jpg") right center no-repeat;
+    color: #fff;
+}
+.more{
+    font-family:"宋体";
+}
+/*商品列表*/
+.shopList{
+    margin-bottom: 15px;
+}
+.shopList .leftArea{
+    width: 190px;
+}
+.shopList .rightArea{
+    width: 808px;
+    height: 396px;
+    border: 1px solid #999;
+    border-bottom: 3px solid #FF7201;
+    overflow: hidden;
+}
+.banner_small{
+    width: 190px;
+    height: 400px;
+}
+.banner_small .imgBox{
+    width: 380px;
+    height: 400px;
+}
+.banner_small img{
+    width: 190px;
+    height: 400px;
+}
+/*商品列表右侧*/
+.shopList_top,
+.shopList_sm{
+    margin-right: -4px;
+}
+.shopList_item{
+    width: 202px;
+    height: 279px;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    font-family: "Microsoft YaHei UI", "微软雅黑";
+    text-align: center;
+    float: left;
+
+}
+.shop_Img{
+    height: 218px;
+    text-align: center;
+}
+.shop_Img img{
+    width: 100%;
+    height: 218px;
+    display: block;
+}
+.shopList_item h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+.shopList_item p{
+    font-size: 14px;
+    color: #FF7300;
+    line-height: 21px;
+}
+.shopItem_sm{
+    width: 202px;
+    border-right: 1px solid #999;
+    height: 116px;
+    float: left;
+}
+.shopItem_smImg{
+    width: 95px;
+    height: 95px;
+    text-align: center;
+}
+.shopItem_smImg img{
+    width: 95px;
+    height: 95px;
+    margin-top: 10px;
+}
+.shopItem_text{
+    padding-top: 28px;
+    width: 100px;
+    line-height: 22px;
+}
+.shopItem_text p{
+    font-family: "新宋体";
+    color: #FF7300;
+}
+.shopItem_text h3{
+    font-family: "Microsoft YaHei UI", "微软雅黑";
+    font-size: 16px;
+    font-weight: normal;
+}
+/*右边导航*/
+.rightNav{
+    width: 70px;
+    position: fixed;
+    left: 50%;
+    margin-left: 500px;
+    top:250px;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+}
+/*IE fixed定位 hack*/
+*html,*html body{
+    background-image: url(about:blank);
+    background-attachment: fixed;
+}
+*html .rightNav{
+    position: absolute;
+    top:expression(((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+250+'px');
+}
+.rightNav img{
+    width: 35px;
+    height: 35px;
+}
+.rightNav ul li a {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    width: 70px;
+    height: 35px ;
+    margin: 10px 0;
+    padding: 10px;
+}
+.rightNav ul li a:hover{
+    background-color: #1D7AD9;
+    color: #fff;
+}
+.rightNav ul li .active{
+    background-color: #1D7AD9;
+    color: #fff;
+}
+/*底部*/
+.footer{
+    margin-top: 40px;
+    text-align: center;
+    background-color: #D4D4D4;
+    line-height: 24px;
+    padding: 50px 0;
+    font-family: "新宋体";
+}
+.footer i{
+    font-weight: normal;
+    margin: 0 5px;
+}
+.footer a{
+    color: #000;
+}
+.footer a:hover{
+    color: #f60;
+}
+.footer_img{
+    padding-top: 30px;
+}
+.footer_img img{
+    margin: 0 12px;
+}
+/*3d 魔方*/
+
+.stage {
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top:110px;
+    left: 130px;
+    margin-left: -75px;
+    margin-top: -75px;
+    font-size:0;
+
+}
+.content{
+    font-size:0;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(-60deg) rotateY(0deg);
+    -webkit-animation: myBox 6s ease-in-out infinite;
+}
+.imgClass{
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    border: 1px solid #ccc;
+}
+.stage .content.row div{
+    font-size:0
+}
+
+.row div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.face{
+    position: absolute;
+    transform: translateZ(48px);
+    -webkit-transform:translateZ(48px) ;
+}
+.face .row div{
+    background-color: rgba(0,0,255,0.5);
+}
+.back{
+    position: absolute;
+    transform: rotateX(180deg) translateZ(48px);
+    -webkit-transform: rotateX(180deg) translateZ(48px) ;
+}
+.back .row div{
+    background-color: rgba(0,255,0,0.5);
+}
+.top{
+    position: absolute;
+    transform: rotateX(90deg) translateZ(48px);
+    -webkit-transform:rotateX(90deg) translateZ(48px);
+
+}
+.top .row div{
+    background-color: rgba(255,255,0,0.5);
+}
+.bottom{
+    position: absolute;
+    transform: rotateX(-90deg) translateZ(48px);
+    -webkit-transform:rotateX(-90deg) translateZ(48px) ;
+}
+.bottom .row div{
+    background-color: rgba(0,255,255,0.5);
+}
+.left{
+    position: absolute;
+    transform: rotateY(-90deg) translateZ(48px);
+    -webkit-transform: rotateY(-90deg) translateZ(48px);
+}
+.left .row div{
+    background-color: rgba(190,190,190,0.5);
+}
+.right{
+    position: absolute;
+    transform: rotateY(90deg) translateZ(48px);
+    -webkit-transform: rotateY(90deg) translateZ(48px);
+}
+.right .row div{
+    background-color: rgba(176,224,170,0.5);
+}
+@-webkit-keyframes myBox {
+    0%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25%{
+        transform: rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+    }
+    30%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+    }
+    60%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+    }
+    75%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+@-o-keyframes myBox {
+    0%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25%{
+        transform: rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+    }
+    30%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+    }
+    60%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+    }
+    75%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+@-moz-keyframes myBox {
+    0%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25%{
+        transform: rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+    }
+    30%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+    }
+    60%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+    }
+    75%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+@-ms-keyframes myBox {
+    0%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25%{
+        transform: rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+    }
+    30%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+    }
+    60%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+    }
+    75%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+@keyframes myBox {
+    0%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25%{
+        transform: rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(90deg) rotateZ(0deg);
+    }
+    30%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(45deg);
+    }
+    60%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+    }
+    75%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+        -webkit-transform:rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
